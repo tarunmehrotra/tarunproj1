@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+/* logo and image */
+#navbar img{
+    margin:15px 15px;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* list style */
+#navbar ul{
+    display: flex;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: medium;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+
+}
+/* section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 465px;
+    padding: 3px 150px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("../img/bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height:87%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+/* services section */
+
+#Services{
+    
+    margin: 34px;
+    display: flex;
+    
+}
+#Services .box{
+   border: 2px solid brown;
+   padding: 8px;
+   margin: 20px 20px;
+
+   border-radius: 28px;
+   background-color: rgb(228, 184, 130);
+
+}
+#Services .box img{
+    height: 160px;
+   
+    margin: auto;
+    display: block;
+    transition-property: all;
+    transition-duration: 1s;
+}
+#Services .box img:hover{
+    height: 140px;
+    padding: 20px;
+}
+#Services .box img{
+   font-family: fantasy;
+   font-weight: normal;
+}
+/* client-section */
+#client-section{
+  
+   
+    position: relative;
+    
+    
+}
+#client-section::before{
+    content: "";
+    background: url("../img/bg.jpg");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+  
+}
+#clients{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.client-item{
+    padding:34px;
+}
+#clients img{
+    height: 120px;
+    padding: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+
+#clients img:hover{
+    height: 140px;
+    padding: 25px;
+}
+
+/* contact */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../img/contact.jpg");
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 10px;
+    
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.5rem;
+}
+
+/* utility */
+.h-primary{
+    color: black;
+    font-size: 2.8rem;
+    padding: 20px;
+    font-weight: bold;
+}
+/* .h-primaryy{
+    margin-top: 200px;
+    color: black;
+    font-size: 2.8rem;
+
+} */
+.h-secondary{
+    color: white;
+    font-size: 2.3rem;
+    padding: 20px;
+    
+}
+.btn{
+    padding: 6px 20px;
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(26, 172, 26);
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin:20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+.btn:hover{
+    background-color: darkgreen;
+    padding: 8px 26px;
+    font-size: 1.6rem;
+    box-shadow:  4px 4px 5px 2px white;
+}
+.center{
+    text-align: center;
+}
+.cen{
+  
+    padding-top: 80px; 
+    padding-bottom: 0px;
+}
+
+footer{
+    background:black;
+    color: white;
+    font-weight: bold;
+    padding:4px 6px;
+}
